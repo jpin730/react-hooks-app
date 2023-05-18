@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+import { HooksApp } from "./HooksApp";
+
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode></React.StrictMode>
+  <React.StrictMode>
+    <HooksApp></HooksApp>
+  </React.StrictMode>
 );
