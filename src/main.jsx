@@ -8,6 +8,7 @@ import { MultipleCustomHooks } from "./multipleHooks/MultipleCustomHooks";
 import { FocusScreen } from "./useRef/FocusScreen";
 import { Layout } from "./useLayoutEffect/Layout";
 import { CallbackHook, MemoHook, Memorize } from "./memos";
+import { Parent } from "./challenge/Parent";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -52,6 +53,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 
       <div className="bg-white border rounded p-5 my-5">
         <CallbackHook />
+      </div>
+
+      <div className="bg-white border rounded p-5 my-5">
+        <Parent />
       </div>
     </div>
   </React.StrictMode>
