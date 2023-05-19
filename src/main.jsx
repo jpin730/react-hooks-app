@@ -7,6 +7,7 @@ import { SimpleForm, FormWithCustomHook } from "./useEffect";
 import { MultipleCustomHooks } from "./multipleHooks/MultipleCustomHooks";
 import { FocusScreen } from "./useRef/FocusScreen";
 import { Layout } from "./useLayoutEffect/Layout";
+import { Memorize } from "./memos/Memorize";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -39,6 +40,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 
       <div className="bg-white border rounded p-5 my-5">
         <Layout />
+      </div>
+
+      <div className="bg-white border rounded p-5 my-5">
+        <Memorize />
       </div>
     </div>
   </React.StrictMode>
