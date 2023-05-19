@@ -9,7 +9,7 @@ export const CounterApp = () => {
   const { counter1 } = counters;
 
   return (
-    <div className="bg-white border rounded p-5 my-5">
+    <>
       <h2>Counter: {counter1}</h2>
       <hr />
       <button
@@ -23,6 +23,6 @@ export const CounterApp = () => {
       >
         +1
       </button>
-    </div>
+    </>
   );
 };

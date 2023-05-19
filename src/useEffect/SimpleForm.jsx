@@ -19,7 +19,7 @@ export const SimpleForm = () => {
   };
 
   return (
-    <div className="bg-white border rounded p-5 my-5">
+    <>
       <h2>Simple Form</h2>
       <hr />
 
@@ -45,6 +45,6 @@ export const SimpleForm = () => {
       <button className="btn btn-primary" onClick={onSubmit}>
         Submit
       </button>
-    </div>
+    </>
   );
 };

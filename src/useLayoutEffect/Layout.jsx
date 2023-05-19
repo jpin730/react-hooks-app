@@ -16,7 +16,7 @@ export const Layout = () => {
   }, [counter]);
 
   return (
-    <div className="bg-white border rounded p-5 my-5">
+    <>
       <h2>Layout </h2>
       <hr />
 
@@ -37,6 +37,6 @@ export const Layout = () => {
       <button className="btn btn-primary" onClick={increment}>
         Change box size
       </button>
-    </div>
+    </>
   );
 };

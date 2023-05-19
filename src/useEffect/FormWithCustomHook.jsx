@@ -10,7 +10,7 @@ export const FormWithCustomHook = () => {
   const { username, email, password } = formState;
 
   return (
-    <div className="bg-white border rounded p-5 my-5">
+    <>
       <h2>Form with Custom Hook</h2>
       <hr />
 
@@ -42,6 +42,6 @@ export const FormWithCustomHook = () => {
       <button className="btn btn-primary" onClick={onSubmit}>
         Submit
       </button>
-    </div>
+    </>
   );
 };

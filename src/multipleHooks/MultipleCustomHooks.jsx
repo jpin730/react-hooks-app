@@ -10,7 +10,7 @@ export const MultipleCustomHooks = () => {
   const { id, body, userId } = !!data && data;
 
   return (
-    <div className="bg-white border rounded p-5 my-5">
+    <>
       <h2>Multiple Custom Hooks</h2>
       <hr />
 
@@ -27,6 +27,6 @@ export const MultipleCustomHooks = () => {
       ) : (
         <Post id={id} body={body} userId={userId} />
       )}
-    </div>
+    </>
   );
 };

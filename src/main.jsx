@@ -13,19 +13,33 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <div className="container">
       <HooksApp />
 
-      <CounterApp />
+      <div className="bg-white border rounded p-5 my-5">
+        <CounterApp />
+      </div>
 
-      <CounterWithCustomHook />
+      <div className="bg-white border rounded p-5 my-5">
+        <CounterWithCustomHook />
+      </div>
 
-      <SimpleForm />
+      <div className="bg-white border rounded p-5 my-5">
+        <SimpleForm />
+      </div>
 
-      <FormWithCustomHook />
+      <div className="bg-white border rounded p-5 my-5">
+        <FormWithCustomHook />
+      </div>
 
-      <MultipleCustomHooks />
+      <div className="bg-white border rounded p-5 my-5">
+        <MultipleCustomHooks />
+      </div>
 
-      <FocusScreen />
+      <div className="bg-white border rounded p-5 my-5">
+        <FocusScreen />
+      </div>
 
-      <Layout />
+      <div className="bg-white border rounded p-5 my-5">
+        <Layout />
+      </div>
     </div>
   </React.StrictMode>
 );

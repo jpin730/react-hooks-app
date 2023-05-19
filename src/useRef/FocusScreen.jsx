@@ -8,7 +8,7 @@ export const FocusScreen = () => {
   };
 
   return (
-    <div className="bg-white border rounded p-5 my-5">
+    <>
       <h2>Focus Screen</h2>
       <hr />
 
@@ -22,6 +22,6 @@ export const FocusScreen = () => {
       <button className="btn btn-primary" onClick={onClick}>
         Focus input
       </button>
-    </div>
+    </>
   );
 };
