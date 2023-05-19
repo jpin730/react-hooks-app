@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Message } from "./Message";
+import { Message } from "./";
 
 export const SimpleForm = () => {
   const [formState, setFormState] = useState({ username: "", email: "" });
