@@ -3,12 +3,19 @@ import { useState } from "react";
 import { Message } from "./";
 
 export const SimpleForm = () => {
-  const [formState, setFormState] = useState({ username: "", email: "" });
+  const initialFormState = { username: "", email: "" };
+
+  const [formState, setFormState] = useState(initialFormState);
 
   const { username, email } = formState;
 
   const onInputChange = ({ target: { name, value } }) => {
     setFormState({ ...formState, [name]: value });
+  };
+
+  const onSubmit = () => {
+    console.log(formState);
+    setFormState(initialFormState);
   };
 
   return (
@@ -34,6 +41,10 @@ export const SimpleForm = () => {
       />
 
       {username === "user" && <Message />}
+
+      <button className="btn btn-primary" onClick={onSubmit}>
+        Submit
+      </button>
     </div>
   );
 };
