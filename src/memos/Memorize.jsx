@@ -26,7 +26,7 @@ export const Memorize = () => {
         onChange={onChangeSwitch}
       />
       <label
-        className="btn btn-outline-primary px-5 me-5"
+        className="btn btn-outline-primary px-5 me-3"
         htmlFor="checkbox-memorize"
       >
         {switchValue ? "On" : "Off"}

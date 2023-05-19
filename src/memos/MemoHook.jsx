@@ -38,7 +38,7 @@ export const MemoHook = () => {
         onChange={onChangeSwitch}
       />
       <label
-        className="btn btn-outline-primary px-5 me-5"
+        className="btn btn-outline-primary px-5 me-3"
         htmlFor="checkbox-memo-hook"
       >
         {switchValue ? "On" : "Off"}
