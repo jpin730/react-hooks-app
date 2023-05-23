@@ -30,7 +30,7 @@ export const TodoAdd = ({ onNewTodo }) => {
         onChange={onInputChange}
       />
       <button
-        className="btn btn-primary px-5"
+        className="btn btn-primary px-4"
         type="submit"
         disabled={!description.length}
       >

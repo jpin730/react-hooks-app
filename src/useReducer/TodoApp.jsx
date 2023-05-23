@@ -12,14 +12,14 @@ export const TodoApp = () => {
   } = useTodos();
 
   return (
-    <div className="bg-white border rounded p-5 my-5">
+    <div className="my-5">
       <h2>
         Todo App: {todosCount}, <small>pending: {pendingTodosCount}</small>
       </h2>
       <hr />
 
       <div className="row">
-        <div className="col-7">
+        <div className="col-8">
           <TodoList
             todos={todos}
             onDeleteTodo={handleDeleteTodo}
@@ -27,7 +27,7 @@ export const TodoApp = () => {
           />
         </div>
 
-        <div className="col-5">
+        <div className="col-4">
           <h3>New Todo</h3>
           <TodoAdd onNewTodo={handleNewTodo} />
         </div>

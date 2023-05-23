@@ -16,6 +16,8 @@ export const LoginPage = () => {
     navigate("/");
   };
 
+  const onKeyUpEnter = ({ key }) => key === "Enter" && onLogin();
+
   return (
     <>
       <h3>Login Page</h3>
@@ -28,8 +30,13 @@ export const LoginPage = () => {
         name="username"
         value={username}
         onChange={onInputChange}
+        onKeyUp={onKeyUpEnter}
       />
-      <button className="btn btn-primary" onClick={onLogin}>
+      <button
+        className="btn btn-primary"
+        onClick={onLogin}
+        disabled={!username}
+      >
         Login
       </button>
     </>

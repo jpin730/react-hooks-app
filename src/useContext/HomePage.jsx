@@ -14,7 +14,7 @@ export const HomePage = () => {
       <hr />
 
       {user ? (
-        <div className="alert alert-light">
+        <div className="alert alert-info">
           Welcome <span className="fw-bold">{user}</span>!
         </div>
       ) : (
