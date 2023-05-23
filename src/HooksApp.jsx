@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 import { BasicHooks } from "./BasicHooks";
-import { ReducerHook } from "./ReducerHook";
+import { TodoApp } from "./useReducer";
 
 export const HooksApp = () => {
   const sections = {
     "Basic Hooks": <BasicHooks />,
-    "Reducer Hook": <ReducerHook />,
+    "Reducer Hook": <TodoApp />,
   };
   const sectionKeys = Object.keys(sections);
   const [selectedSection, setSelectedSection] = useState(sectionKeys[0]);
