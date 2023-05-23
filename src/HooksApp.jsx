@@ -2,14 +2,16 @@ import { useState } from "react";
 
 import { BasicHooks } from "./BasicHooks";
 import { TodoApp } from "./useReducer";
+import { MainApp } from "./useContext";
 
 export const HooksApp = () => {
   const sections = {
     "Basic Hooks": <BasicHooks />,
     "Reducer Hook": <TodoApp />,
+    "Context Hook": <MainApp />,
   };
   const sectionKeys = Object.keys(sections);
-  const [selectedSection, setSelectedSection] = useState(sectionKeys[0]);
+  const [selectedSection, setSelectedSection] = useState(sectionKeys[2]);
 
   const onSelectSection = ({ target: { innerText } }) => {
     const sectionName = innerText.trim();
