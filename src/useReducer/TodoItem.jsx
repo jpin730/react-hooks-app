@@ -7,9 +7,11 @@ export const TodoItem = ({ todo, onDeleteTodo, onToggleTodo }) => {
         }`}
         style={{ cursor: "pointer" }}
         onClick={() => onToggleTodo(todo)}
+        aria-label="span"
       >
         <i
           className={`me-2 ${todo.done ? "bi-check-square" : "bi-square"}`}
+          aria-label="square-icon"
         ></i>
         {todo.description}
       </span>
