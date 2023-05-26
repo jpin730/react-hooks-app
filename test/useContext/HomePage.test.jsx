@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import { BrowserRouter } from "react-router-dom";
+import { MemoryRouter } from "react-router-dom";
 
 import { HomePage, UserContext } from "../../src/useContext";
 
@@ -17,11 +17,11 @@ describe("HomePage", () => {
 
   test("should render component in logged out status", () => {
     render(
-      <BrowserRouter>
+      <MemoryRouter>
         <UserContext.Provider value={{ user: "" }}>
           <HomePage />
         </UserContext.Provider>
-      </BrowserRouter>
+      </MemoryRouter>
     );
 
     const loginBtn = screen.queryByRole("button");
@@ -33,11 +33,11 @@ describe("HomePage", () => {
   test("should render component in logged in status", () => {
     const user = "MockedUsername";
     render(
-      <BrowserRouter>
+      <MemoryRouter>
         <UserContext.Provider value={{ user }}>
           <HomePage />
         </UserContext.Provider>
-      </BrowserRouter>
+      </MemoryRouter>
     );
 
     const alertDivElement = screen.queryByRole("alert");
@@ -48,11 +48,11 @@ describe("HomePage", () => {
 
   test("should call navigate on click login button", () => {
     render(
-      <BrowserRouter>
+      <MemoryRouter>
         <UserContext.Provider value={{ user: "" }}>
           <HomePage />
         </UserContext.Provider>
-      </BrowserRouter>
+      </MemoryRouter>
     );
 
     const loginBtn = screen.queryByRole("button");

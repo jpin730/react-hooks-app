@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import { BrowserRouter } from "react-router-dom";
+import { MemoryRouter } from "react-router-dom";
 
 import { LoginPage, UserContext } from "../../src/useContext";
 
@@ -15,11 +15,11 @@ describe("LoginPage", () => {
     const mockSetUser = jest.fn();
 
     render(
-      <BrowserRouter>
+      <MemoryRouter>
         <UserContext.Provider value={{ setUser: mockSetUser }}>
           <LoginPage />
         </UserContext.Provider>
-      </BrowserRouter>
+      </MemoryRouter>
     );
 
     const inputElement = screen.getByRole("textbox");
@@ -33,11 +33,11 @@ describe("LoginPage", () => {
     const mockSetUser = jest.fn();
 
     render(
-      <BrowserRouter>
+      <MemoryRouter>
         <UserContext.Provider value={{ setUser: mockSetUser }}>
           <LoginPage />
         </UserContext.Provider>
-      </BrowserRouter>
+      </MemoryRouter>
     );
 
     const inputElement = screen.getByRole("textbox");
